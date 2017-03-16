@@ -1,6 +1,6 @@
 ﻿using System;
 using static Task1.Class1;
-
+using static Task2.Class2;
 
 namespace Test.CUI
 {
@@ -17,6 +17,16 @@ namespace Test.CUI
 
             int[] arr2 = { 1, 100, 50, 5, 1, 1 };
             Console.WriteLine(ReturnIndex(arr2));
+
+            Console.WriteLine("Task2:");
+            string a = "xyaabbbccccdefww";
+            string b = "xxxxyyyyabklmopq";
+            Console.WriteLine(Longest(a, b));
+
+            a = "abcdefghijklmnopqrstuvwxyz";
+            Console.WriteLine(Longest(a, a));
+
+
             Console.ReadKey();
         }
     }
