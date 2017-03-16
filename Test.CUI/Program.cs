@@ -1,6 +1,7 @@
 ﻿using System;
 using static Task1.Class1;
 using static Task2.Class2;
+using static Task3.Class3;
 
 namespace Test.CUI
 {
@@ -26,7 +27,19 @@ namespace Test.CUI
             a = "abcdefghijklmnopqrstuvwxyz";
             Console.WriteLine(Longest(a, a));
 
-
+            Console.WriteLine("Task3:");
+            int g = 8, h = 15, x = 0, y = 0;
+            Console.WriteLine(Insert(g, h, x, y));
+            g = 15;
+            h = int.MaxValue;
+            x = 3;
+            y = 5;
+            Console.WriteLine(Insert(g, h, x, y));
+            g = 0;
+            h = 15;
+            x = 30;
+            y = 30;
+            Console.WriteLine(Insert(g, h, x, y));
             Console.ReadKey();
         }
     }

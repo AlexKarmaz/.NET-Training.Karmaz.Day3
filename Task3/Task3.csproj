@@ -4,17 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{70BD8F8F-8EAE-4EAB-B1C7-E65F6BF4B602}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{D44F369E-8FF5-4325-A3F1-5473AA0D4714}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Test.CUI</RootNamespace>
-    <AssemblyName>Test.CUI</AssemblyName>
+    <RootNamespace>Task3</RootNamespace>
+    <AssemblyName>Task3</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,9 +20,9 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\Task3.XML</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,25 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Class3.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Task1\Task1.csproj">
-      <Project>{899f1ca0-3183-4c7e-b462-1cb74b6bc519}</Project>
-      <Name>Task1</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Task2\Task2.csproj">
-      <Project>{a455f76e-c10e-44e9-80e5-5e01ec72cd09}</Project>
-      <Name>Task2</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Task3\Task3.csproj">
-      <Project>{d44f369e-8ff5-4325-a3f1-5473aa0d4714}</Project>
-      <Name>Task3</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -18,13 +18,21 @@ namespace Task1
         /// </summary>
         /// <param name="array">The System.Array in which the index is searchedy</param>
         /// <returns>The integer value of the array index for which the sum of the elements
-        /// to the left of it is equal to the sum of the elements on the right.</returns>
+        /// to the left of it is equal to the sum of the elements on the right</returns>
         /// <exception cref="ArgumentNullException"></exception>
         public static int ReturnIndex(int[] array)
         {
             if(array == null)
             {
                 throw new ArgumentNullException("array");
+            }
+            if (array.Length == 0)
+            {
+                throw new Exception("array is empty");
+            }
+            if (array.Length > 1000)
+            {
+                throw new Exception("invalid array size");
             }
             for (int i = 0; i < array.Length; i++)
             {
