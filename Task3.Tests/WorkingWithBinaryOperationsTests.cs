@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Task3.Tests
+namespace Task3.Tests.MSUnit.DDT
 {
     [TestClass]
     public class WorkingWithBinaryOperationsTests
@@ -55,7 +55,7 @@ namespace Task3.Tests
             DataAccessMethod.Sequential)]
         [DeploymentItem("DDT.Demo.Tests\\NumbersForTestThrowsArgumentOutOfRangeException.xml")]
         [ExpectedException(typeof(ArgumentOutOfRangeException))]
-        public void Insert_LeftIndexMoreRightIndex_ThrowsArgumentOutOfRangeException()
+        public void Insert_IndexesLessThan0AndMoreThan31_ThrowsArgumentOutOfRangeException()
         {
             int first = Convert.ToInt32(TestContext.DataRow["number1"]);
             int second = Convert.ToInt32(TestContext.DataRow["number2"]); ;
