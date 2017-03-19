@@ -9,7 +9,7 @@ namespace Task1
     /// <summary>
     /// This class contains methods for working with arrays
     /// </summary>
-    public static class Class1
+    public static class WorkingWithArrays
     {
         #region Public methods
         /// <summary>

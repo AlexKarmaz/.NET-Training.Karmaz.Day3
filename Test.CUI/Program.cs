@@ -1,7 +1,7 @@
 ﻿using System;
-using static Task1.Class1;
-using static Task2.Class2;
-using static Task3.Class3;
+using static Task1.WorkingWithArrays;
+using static Task2.WorkingWithString;
+using static Task3.WorkingWithBinaryOperations;
 
 namespace Test.CUI
 {

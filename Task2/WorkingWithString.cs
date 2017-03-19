@@ -9,7 +9,7 @@ namespace Task2
     /// <summary>
     /// This class contains methods for working with string
     /// </summary>
-    public static class Class2
+    public static class WorkingWithString
     {
         /// <summary>
         /// Concatenate two strings excluding duplicate characters and sort the result alphabetically
