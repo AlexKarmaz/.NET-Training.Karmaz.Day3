@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TestCases>
+  <TestCase>
+    <number1>8</number1>
+    <number2>15</number2>
+    <index1>7</index1>
+    <index2>5</index2>
+  </TestCase>
+  <TestCase>
+    <number1>8</number1>
+    <number2>15</number2>
+    <index1>1</index1>
+    <index2>0</index2>
+  </TestCase>
+</TestCases>

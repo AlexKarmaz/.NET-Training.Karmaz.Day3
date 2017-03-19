@@ -18,8 +18,12 @@ namespace Task3
         /// <returns>New number after insertion</returns>
         /// <exception cref="ArgumentException"></exception>
         public static int Insert(int number1, int number2, int index1, int index2)
-         {
-            if (index1 > index2 || index1 < 0 || index2 < 0 || index1 > 32 || index2 > 32)
+         {         
+            if(index1 < 0 || index2 < 0 || index1 > 31 || index2 > 31)
+            {
+                throw new ArgumentOutOfRangeException();
+            }
+            if (index1 > index2)
             {
                 throw new ArgumentException();
             }
